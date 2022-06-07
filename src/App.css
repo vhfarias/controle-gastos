@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+:root {
+  --color-base: #7765b8;
+  --color-highlight: #6b5aa8;
+  --color-text-primary: white;
+  --color-text-secondary: black;
+  --color-income: #35a531;
+  --color-expense: rgb(194, 46, 53);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: #F9F9F9;
   min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.income,
+.iconIncome {
+  color: var(--color-income);
+}
+
+.iconIncome {
+  transform: rotate(90deg);
+}
+
+.expense,
+.iconExpense {
+  color: var(--color-expense);
+}
+
+.iconExpense {
+  transform: rotate(270deg);
+}
+
+.App {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  min-width: 450px;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  position: relative;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  max-width: 96%;
+  width: 96%;
+  margin: auto;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1140px;
+  position: relative;
+  top: -50px;
+  width: fit-content;
+}
+
+input[type="radio"] {
+  accent-color: var(--color-base);
+}
+
+button {
+  padding: 6px 10px;
+  background-color: var(--color-base);
   color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+  transition: background-color 0.15s;
+  max-width: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-highlight);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 660px) {
+  .cardContainer {
+    flex-direction: column;
+    top: 0;
+    margin: 20px 0;
   }
 }

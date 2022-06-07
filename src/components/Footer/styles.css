@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  min-height: 60px;
+  color: var(--color-text-primary);
+}
+
+footer p {
+  margin: 0;
+}

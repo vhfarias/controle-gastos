@@ -1,0 +1,10 @@
+.formEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formEntry label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}

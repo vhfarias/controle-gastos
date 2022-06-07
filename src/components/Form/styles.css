@@ -1,0 +1,40 @@
+.entryForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #00000023;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+}
+
+.entryForm>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.entryForm input {
+  padding: 3px 7px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+input[name="description"] {
+  min-width: 100%;
+}
+
+input[name="amount"] {
+  max-width: 100px;
+  text-align: flex-end;
+}
+
+input[name="reference"] {
+  max-width: 80px;
+}

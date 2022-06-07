@@ -1,0 +1,17 @@
+header {
+  background-color: var(--color-base);
+  color: white;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+header h1 {
+  margin: 1em 0;
+  font-size: 2.2em;
+}
+
+@media(max-width:660px) {
+  header {
+    min-height: 120px;
+  }
+}

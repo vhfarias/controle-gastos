@@ -1,0 +1,35 @@
+.listItem {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: 3fr 10ch 40px 1fr 40px;
+  gap: 30px;
+  text-align: start;
+  padding: 10px;
+}
+
+.moneyFormat {
+  display: grid;
+  grid-template-columns: 3ch auto;
+  width: 100%;
+}
+
+.listItem button {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.listItem svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btnRemove * {
+  color: var(--color-base);
+}
+
+.btnRemove *:hover {
+  color: var(--color-highlight);
+}
