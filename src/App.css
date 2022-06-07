@@ -16,10 +16,6 @@ body {
   min-height: 100vh;
 }
 
-#root {
-  min-height: 100vh;
-}
-
 .income,
 .iconIncome {
   color: var(--color-income);
@@ -53,7 +49,7 @@ body {
 .wrapper {
   flex: 1;
   display: flex;
-  max-width: 96%;
+  max-width: 1140px;
   width: 96%;
   margin: auto;
   flex-direction: column;
@@ -64,7 +60,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  max-width: 1140px;
   position: relative;
   top: -50px;
   width: fit-content;
