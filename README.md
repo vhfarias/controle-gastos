@@ -2,7 +2,7 @@
 
 Uma lista de controle de gastos simples na qual podem ser inseridas entradas e saídas com uma descrição, valor e uma referência. As informações persistem no LocalStorage e os valores totais são atualizados automaticamente. Este projeto é baseado neste [vídeo](https://www.youtube.com/watch?v=pj4vA67olbU) do canal [Will Dev](https://www.youtube.com/channel/UCLTb4X0OBfp9rRGkhOcktbQ) do Youtube.
 
-Você pode conferir o app aqui: <a href="https://nlw-return-impulse-gilt.vercel.app/">![Website](https://img.shields.io/website?down_color=c43b3b&down_message=Offline&label=Controle%20Financeiro&logo=vercel&style=flat-square&up_color=5fab38&up_message=Online&url=https%3A%2F%2Fnlw-return-impulse-gilt.vercel.app%2F)</a>
+Você pode conferir o app aqui: <a href="https://controle-gastos-three.vercel.app/">![Website](https://img.shields.io/website?down_color=c43b3b&down_message=Offline&label=Controle%20Financeiro&logo=vercel&style=flat-square&up_color=5fab38&up_message=Online&url=https%3A%2F%2Fcontrole-gastos-three.vercel.app%2F)</a>
 
 <div align="center">
 
