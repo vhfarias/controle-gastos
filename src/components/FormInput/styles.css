@@ -1,10 +1,56 @@
-.formEntry {
+.input2 {
   display: flex;
   flex-direction: column;
+  max-width: 300px;
   align-items: flex-start;
+  font-weight: 400;
 }
 
-.formEntry label {
-  margin-bottom: 6px;
+.input2 input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  border-radius: 0;
+  font-size: 0.9em;
+}
+
+.input2 input:focus {
+  outline: none;
+  border-bottom-color: var(--color-highlight);
+}
+
+.input2 label {
+  position: relative;
+  min-height: 21px;
+  top: 22px;
+  margin-bottom: 4px;
+  font-size: 0.9em;
+  transition: top .15s, font-size .15s;
+}
+
+.input2 .inputActive {
+  top: 0;
+  font-size: 1em;
   font-weight: 500;
+}
+
+.formError {
+  color: crimson;
+  font-size: 0.75em;
+  min-height: calc(1em + 4px);
+  margin-top: 4px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+  position: relative;
+  top: 0;
+}
+
+.errorActive {
+  display: block;
+  opacity: 1;
+
+}
+
+.input2 label:not(.inputActive) {
+  cursor: text;
 }

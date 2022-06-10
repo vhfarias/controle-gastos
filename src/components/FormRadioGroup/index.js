@@ -1,5 +1,7 @@
-import { useRef } from 'react';
 import './styles.css'
+
+import { useRef } from 'react';
+
 export const FormRadioGroup = ({ values, state, setState }) => {
 
   const [selection, setSelection] = [state, setState];

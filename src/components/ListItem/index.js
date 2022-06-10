@@ -10,7 +10,7 @@ export const ListItem = ({ item, onRemove }) => {
         <span>R$</span>
         <span>{`${item.amount.toFixed(2).toString().replace('.', ',')}`}</span>
       </span>
-      <span><AiFillRightCircle className={item.type === 'Entrada' ? "income iconIncome" : "expense iconExpense"} /></span>
+      <AiFillRightCircle className={item.type === 'Entrada' ? "income iconIncome" : "expense iconExpense"} />
       <span>{item.dateRef}</span>
       <button className="btnRemove" onClick={() => onRemove(item.id)}><AiFillCloseCircle /></button>
     </li>

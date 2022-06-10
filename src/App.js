@@ -47,6 +47,7 @@ function App() {
         <List entries={entries} setEntries={setEntries} />
       </div>
       <Footer text="© 2022 Victor Hugo Garcia de Farias" />
+
     </div>
   );
 }
