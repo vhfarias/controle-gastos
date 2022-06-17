@@ -1,9 +1,11 @@
-import { removeEntryById } from '../../util/handleEntries'
-import { ListItem } from '../ListItem'
 import './styles.css'
 
+import { ListItem } from '../ListItem'
 
-export const List = ({ entries, setEntries }) => {
+import { removeEntryById } from '../../util/handleEntries'
+
+
+export const List = ({ headers, entries, setEntries }) => {
   const handleRemove = (id) => {
     let entries = removeEntryById(id)
     setEntries(entries);
@@ -11,10 +13,7 @@ export const List = ({ entries, setEntries }) => {
   return (
     <ul className="list">
       <li className="header">
-        <span>Descrição</span>
-        <span>Valor</span>
-        <span>Tipo</span>
-        <span>Referência</span>
+        {headers.map((header, index) => <span key={index}>{header}</span>)}
       </li>
       {entries.map((item) => {
         return (

@@ -1,24 +1,24 @@
 import './styles.css'
 
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 
-export const FormRadioGroup = ({ values, state, setState }) => {
+export const FormRadioGroup = ({ optionsList, value, onChange }) => {
 
-  const [selection, setSelection] = [state, setState];
   const id = useRef(Math.floor(Math.random() * 100000));
 
   return (
     <div className="formEntry radioGroup">
       {
-        values.map((value, index) => {
+        optionsList.map((option) => {
           return (
-            <div key={`${id.current}_${index}`}>
-              <input id={`radio${value}`} type="radio" name={`group${id.current}`} value={value} checked={selection === value} onChange={(e) => setSelection(e.target.value)} />
-              <label htmlFor={`radio${value}`} >{value}</label>
-            </div>
+            <React.Fragment key={`${id}_${option}`}>
+              <input id={`radio${option}`} type="radio" name={`group${id.current}`} value={option} checked={value === option} onChange={onChange} />
+              <label htmlFor={`radio${option}`} >{option}</label>
+            </React.Fragment>
+
           )
         })
       }
-    </div>
+    </div >
   )
 }

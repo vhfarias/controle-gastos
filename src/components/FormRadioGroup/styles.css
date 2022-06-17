@@ -1,5 +1,11 @@
 .radioGroup {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  justify-items: left;
+  row-gap: 3px;
+}
+
+.radioGroup input {
+  margin: 0;
 }

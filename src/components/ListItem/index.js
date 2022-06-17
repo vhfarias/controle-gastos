@@ -8,10 +8,10 @@ export const ListItem = ({ item, onRemove }) => {
       <span>{item.description}</span>
       <span className="moneyFormat">
         <span>R$</span>
-        <span>{`${item.amount.toFixed(2).toString().replace('.', ',')}`}</span>
+        <span>{`${Number(item.amount).toFixed(2).replace('.', ',')}`}</span>
       </span>
       <AiFillRightCircle className={item.type === 'Entrada' ? "income iconIncome" : "expense iconExpense"} />
-      <span>{item.dateRef}</span>
+      <span>{item.reference}</span>
       <button className="btnRemove" onClick={() => onRemove(item.id)}><AiFillCloseCircle /></button>
     </li>
   )
