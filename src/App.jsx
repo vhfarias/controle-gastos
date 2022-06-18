@@ -19,7 +19,7 @@ function App() {
   const [expenseValue, setExpenseValue] = useState(0);
   const [totalValue, setTotalValue] = useState(0);
 
-  const [entries, setEntries] = useState(loadEntries());
+  const [entries, setEntries] = useState([]);
 
   //ao montar, atualiza a lista com as entradas carregadas do LocalStorage
   useEffect(() => {
