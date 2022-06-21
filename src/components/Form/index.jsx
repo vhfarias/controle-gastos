@@ -9,13 +9,50 @@ export const Form = ({ setEntries, config }) => {
 
   const [formData, handleChange, handleSubmit, errors] = useForm(config, setEntries);
 
+
+  let fields = Object.entries(config).map(([name, settings], index) => {
+    let element;
+    switch (settings.type) {
+      case "text":
+        element = (<FormInput
+          key={index}
+          name={name}
+          type={settings.type}
+          title={settings.title}
+          value={formData[name]}
+          onChange={handleChange(name)}
+          errors={errors}
+        />);
+        break;
+      case "radio":
+        element = (<FormRadioGroup
+          key={index}
+          optionsList={settings.options}
+          value={formData[name]}
+          onChange={handleChange(name)}
+          errors={errors}
+        />)
+        break;
+      default:
+        break;
+    }
+    return element
+  })
+
   return (
     <form
       className="entryForm"
       method="post"
       onSubmit={handleSubmit}
     >
-      <div>
+      {fields}
+      <button
+        formAction='submit'
+      >
+        Novo Item
+      </button>
+
+      {/* <div>
         <FormInput
           name="description"
           type="text"
@@ -32,8 +69,6 @@ export const Form = ({ setEntries, config }) => {
           onChange={handleChange('amount')}
           errors={errors}
         />
-      </div>
-      <div>
         <FormInput
           name="reference"
           type="text"
@@ -42,6 +77,8 @@ export const Form = ({ setEntries, config }) => {
           onChange={handleChange('reference')}
           errors={errors}
         />
+      </div>
+      <div>
         <FormRadioGroup
           optionsList={['Entrada', 'Saída']}
           value={formData.type}
@@ -53,7 +90,7 @@ export const Form = ({ setEntries, config }) => {
         >
           Novo Item
         </button>
-      </div>
+      </div> */}
     </form>
   )
 }

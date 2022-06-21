@@ -66,10 +66,6 @@ body {
   width: fit-content;
 }
 
-input[type="radio"] {
-  accent-color: var(--color-base);
-}
-
 button {
   padding: 6px 10px;
   background-color: var(--color-base);
@@ -86,7 +82,19 @@ button:hover {
   background-color: var(--color-highlight);
 }
 
-@media (max-width: 660px) {
+.formDescription input {
+  width: 20ch;
+}
+
+.formAmount input {
+  width: 12ch;
+}
+
+.formReference input {
+  width: 12ch;
+}
+
+@media (max-width: 665px) {
   .cardContainer {
     flex-direction: column;
     top: 0;

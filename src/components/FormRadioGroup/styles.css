@@ -8,4 +8,5 @@
 
 .radioGroup input {
   margin: 0;
+  accent-color: var(--color-base);
 }

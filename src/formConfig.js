@@ -8,7 +8,7 @@ export const formConfig = {
     validation: {
       required: {
         value: true,
-        message: "Campo obrigatório",
+        message: "Obrigatório",
       },
     }
   },
@@ -20,11 +20,11 @@ export const formConfig = {
     validation: {
       required: {
         value: true,
-        message: "Campo obrigatório"
+        message: "Obrigatório"
       },
       pattern: {
         value: /[0-9]+[,.]{1}[0-9]{2}/,
-        message: "Insira um valor válido",
+        message: "Valor inválido",
       },
     }
   },
@@ -35,7 +35,7 @@ export const formConfig = {
     validation: {
       required: {
         value: false,
-        message: "Campo obrigatório"
+        message: "Obrigatório"
       },
       pattern: {
         value: /^([A-z]{3})\/([0-9]{4}|[0-9]{2})\b/g,

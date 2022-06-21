@@ -7,8 +7,10 @@ export const FormInput = ({ name, type, title, value, onChange, errors }) => {
   const id = useRef(`input${name[0].toUpperCase()}${name.slice(1).toLowerCase()}`);
   const [isFocused, setIsFocused] = useState(false);
 
+  let classNames = ["formInput", `form${name[0].toUpperCase()}${name.slice(1)}`]
+
   return (
-    <div className="formInput">
+    <div className={classNames.join(' ')}>
       <label
         htmlFor={id.current}
         className={(isFocused || value.length > 0) ? 'inputActive' : null}
