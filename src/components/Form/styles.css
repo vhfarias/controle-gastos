@@ -8,18 +8,17 @@
   border-radius: 5px;
   box-shadow: 0 0 3px #00000023;
   padding: 20px;
-  width: 100%;
+  width: fit-content;
   column-gap: 20px;
-}
-
-.entryForm>div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
 }
 
 .entryForm button {
   font-weight: 500;
+}
+
+@media (max-width: 680px) {
+  .entryForm {
+    max-width: 80%;
+    row-gap: 20px;
+  }
 }

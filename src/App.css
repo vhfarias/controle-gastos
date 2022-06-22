@@ -94,7 +94,7 @@ button:hover {
   width: 12ch;
 }
 
-@media (max-width: 665px) {
+@media (max-width: 680px) {
   .cardContainer {
     flex-direction: column;
     top: 0;

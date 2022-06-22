@@ -45,7 +45,7 @@
   color: var(--color-expense);
 }
 
-@media (max-width: 665px) {
+@media (max-width: 680px) {
   .card {
     grid-template-columns: auto 1fr 3fr;
     align-items: center;

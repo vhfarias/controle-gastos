@@ -10,7 +10,7 @@ header h1 {
   font-size: 2.2em;
 }
 
-@media (max-width: 665px) {
+@media (max-width: 680px) {
   header {
     min-height: 120px;
   }

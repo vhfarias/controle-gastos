@@ -38,7 +38,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 665px) {
+@media (max-width: 680px) {
   .list li {
     grid-template-columns: 1fr 12ch 40px 40px;
   }
