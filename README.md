@@ -21,10 +21,24 @@ Você pode conferir o app aqui: <a href="https://controle-gastos-three.vercel.ap
 1. Executar <code>npm run build</code>
 1. Abrir o arquivo <code>index.html</code> gerado na pasta <code>build</code>
 
+### Histórico
+
+#### v1.1.0
+
+- Adicionada validação aos campos do formulário.
+- Criação de um hook _useForm_ para gerenciar a criação e o estado do formulário a partir de um objeto de configuração dos campos.
+
+#### v1.0.0
+
+- Versão inicial. É possível adicionar e remover itens da lista e os totais de entrada, saída e geral são calculados automaticamente.
+
 ### Planos Futuros
 
-- Validação dos campos do formulário de nova entrada
 - Filtragem da lista por valor de referência
 - Categorização da entrada/saída em grupos
+
+### Referências
+- Inspiração: [Will Dev](https://www.youtube.com/watch?v=pj4vA67olbU)
+- Validação do formulário com React Hook: [Felix Gerschau](https://felixgerschau.com/react-hooks-form-validation-typescript/)
 
 
