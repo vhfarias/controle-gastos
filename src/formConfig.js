@@ -23,7 +23,7 @@ export const formConfig = {
         message: "Obrigatório"
       },
       pattern: {
-        value: /[0-9]+[,.]{1}[0-9]{2}/,
+        value: /[0-9]+([,.]{0,1}[0-9]{0,2}){1}/,
         message: "Valor inválido",
       },
     }
