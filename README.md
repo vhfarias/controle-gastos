@@ -23,6 +23,10 @@ Você pode conferir o app aqui: <a href="https://controle-gastos-three.vercel.ap
 
 ### Histórico
 
+#### v1.1.1
+
+- Mudança na validação do campo "Valor". Agora ele aceita números inteiros e decimais com uma casa, como '5', '27,' e '123.4'.
+
 #### v1.1.0
 
 - Adicionada validação aos campos do formulário.
